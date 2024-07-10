@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.9.xsd">
+
+    <changeSet id="c40150da-491a-4602-aaff-9e5d24caabd3" author="dinesh">
+        <renameColumn tableName="course" oldColumnName="name" newColumnName="subject" columnDataType="varchar(255)"/>
+        <rollback>
+            <renameColumn tableName="course" oldColumnName="subject" newColumnName="name" columnDataType="varchar(255)"/>
+        </rollback>
+
+    </changeSet>
+
+</databaseChangeLog>

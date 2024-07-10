@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.9.xsd">
+
+    <include file="db/changelog/20240709111523_create_school_entity.xml"/>
+    <include file="db/changelog/20240709112037_create_student_entity.xml"/>
+    <include file="db/changelog/20240709152912_create_course_entity.xml"/>
+    <include file="db/changelog/20240709161423_add_column_student_entity.xml"/>
+    <include file="db/changelog/20240709162525_alter_student_entity.xml"/>
+    <include file="db/changelog/20240709163512_drop_colum_student_entity.xml"/>
+    <include file="db/changelog/20240710131723_alter_field_name_course_entity.xml"/>
+
+</databaseChangeLog>

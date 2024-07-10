@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.9.xsd">
+
+    <changeSet id="e56ba24d-952a-42eb-86bb-f7ad8bf18724" author="dinesh">
+        <dropColumn tableName="student" columnName="phone_number"/>
+<!--        <update tableName="student" catalogName="id"/>-->
+    </changeSet>
+
+</databaseChangeLog>
+
